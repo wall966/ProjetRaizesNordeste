@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raízes do Nordeste</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Bebas+Neue&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- CURSOR -->
+<div class="cursor" id="cursor"></div>
+
+<!-- TOAST -->
+<div class="toast" id="toast">✓ Added to order!</div>
+
+<!-- ===== HOME ===== -->
+<div class="screen active" id="screen-home">
+  <div class="home-bg-pattern"></div>
+  <div class="home-bg-dots"></div>
+
+  <div class="home-header">
+    <div class="badge-bem-vindo">✦ Welcome ✦</div>
+    <div class="home-title">
+      Raízes
+      <span>do Nordeste</span>
+    </div>
+    <p class="home-subtitle">Authentic flavors from the land</p>
+  </div>
+
+  <div class="logo-area">
+    <div class="logo-ring">
+      <div class="logo-inner">
+        <div>
+          <strong>🌵</strong>
+          Since 2010<br>
+          <strong>Nordestino</strong>
+          Restaurant
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="home-buttons">
+    <button class="btn-home btn-primary" onclick="showScreen('screen-menu')">
+      <div class="btn-icon">🍽️</div>
+      <div class="btn-text">
+        <span class="btn-label">Tap to get started</span>
+        Place Order
+      </div>
+      <span class="btn-arrow">→</span>
+    </button>
+
+    <button class="btn-home btn-secondary" onclick="showPopulares()">
+      <div class="btn-icon">⭐</div>
+      <div class="btn-text">
+        <span class="btn-label">Most ordered</span>
+        Most Popular
+      </div>
+      <span class="btn-arrow">→</span>
+    </button>
+
+    <button class="btn-home btn-ghost" onclick="showDishOfTheDay()">
+      <div class="btn-icon">🎉</div>
+      <div class="btn-text">
+        <span class="btn-label">Today's special dish</span>
+        Dish of the Day
+      </div>
+      <span class="btn-arrow">→</span>
+    </button>
+  </div>
+
+  <div class="home-footer">© 2026 Raízes do Nordeste · All rights reserved</div>
+</div>
+
+<!-- ===== MENU ===== -->
+<div class="screen" id="screen-menu">
+  <div class="menu-header">
+    <button class="btn-back" onclick="showScreen('screen-home')">←</button>
+    <div class="menu-header-text">
+      <h2>Menu</h2>
+      <p>Fresh dishes prepared to order</p>
+    </div>
+  </div>
+
+  <div class="categories-bar">
+    <button class="cat-btn" onclick="filterCat(this,'pratos')">🥘 Dishes</button>
+    <button class="cat-btn" onclick="filterCat(this,'bebidas')">🥤 Drinks</button>
+    <button class="cat-btn" onclick="filterCat(this,'sobremesas')">🍮 Desserts</button>
+    <button class="cat-btn" onclick="filterCat(this,'combos')">⭐ Combos</button>
+  </div>
+
+  <div class="menu-grid" id="menu-grid"></div>
+
+  <div class="cart-float" id="cart-float">
+    <div class="cart-float-left">
+      <div class="cart-count-badge" id="cart-count">0</div>
+      <div>
+        <div class="cart-float-label">View my order</div>
+        <div class="cart-float-total" id="cart-total-float">R$ 0,00</div>
+      </div>
+    </div>
+    <button class="btn-cart-view" onclick="showScreen('screen-cart')">View Order →</button>
+  </div>
+</div>
+
+<!-- ===== CART ===== -->
+<div class="screen" id="screen-cart">
+  <div class="cart-header">
+    <button class="btn-back" onclick="showScreen('screen-menu')">←</button>
+    <div class="cart-header-text">
+      <h2>My Order</h2>
+    </div>
+  </div>
+
+  <div class="cart-items-list" id="cart-items-list"></div>
+
+  <div class="cart-summary">
+    <div class="summary-row"><span>Subtotal</span><span id="summary-sub">R$ 0,00</span></div>
+    <div class="summary-row"><span>Service fee (10%)</span><span id="summary-tax">R$ 0,00</span></div>
+    <div class="summary-row total"><span>TOTAL</span><span id="summary-total">R$ 0,00</span></div>
+    <button class="btn-order" onclick="confirmOrder()">🍽️ CONFIRM ORDER</button>
+  </div>
+</div>
+
+<!-- ===== SUCCESS ===== -->
+<div class="screen" id="screen-success">
+  <div class="success-icon">🎉</div>
+  <div class="success-h1">Order<br>Confirmed!</div>
+  <div class="order-number">
+    <span>Order number</span>
+    #<span id="order-num">042</span>
+  </div>
+  <p class="success-p">Your order has been received! It will be prepared with care for you shortly. 🌵</p>
+  <button class="btn-new-order" onclick="newOrder()">New Order</button>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
