@@ -1,5 +1,7 @@
 # 🌵 Raízes do Nordeste — Self-Service Kiosk
 
+Link: https://www.decsi.fr/raizes/
+
 > Front-end prototype of a self-service ordering kiosk developed for the Raízes do Nordeste restaurant chain.
 > Built using HTML5, CSS3 and JavaScript (ES6+) without frameworks.
 
