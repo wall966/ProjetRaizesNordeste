@@ -13,8 +13,8 @@ Link: https://www.decsi.fr/raizes/
 | ------------------------- | ------------------------- |
 | ![Home Screen](img/1.png) | ![Menu Screen](img/2.png) |
 
-| Cart                      | Order Confirmed                  |
-| ------------------------- | -------------------------------- |
+| Cart                      | Order Confirmation                  |
+| ------------------------- | ------------------------------------ |
 | ![Cart Screen](img/3.png) | ![Order Confirmation](img/4.png) |
 
 ---
@@ -23,7 +23,7 @@ Link: https://www.decsi.fr/raizes/
 
 This project was developed for the **Multidisciplinary Project** at **UNINTER**, based on a case study involving the Raízes do Nordeste restaurant chain.
 
-The objective was to design and implement the front-end of a self-service kiosk that allows customers to browse the menu, add products to a cart, review their order and receive a confirmation number.
+The goal was to design and implement the front-end of a self-service kiosk that allows customers to browse the menu, add products to a cart, review their order, and receive a confirmation number.
 
 ### User Journey
 
@@ -35,16 +35,16 @@ Home → Menu → Cart → Order Confirmation
 
 ## ✨ Features
 
-* 🍽️ Dynamic menu rendering
-* 🔍 Category filtering
-* ⭐ Popular dishes section
-* 🌟 Daily special highlight
-* 🛒 Floating shopping cart
-* ➕➖ Quantity controls
-* 💰 Automatic total calculation
-* 🎉 Order confirmation with generated order number
-* 🖱️ Custom cursor effects
-* 📱 Responsive design
+- 🍽️ Dynamic menu rendering
+- 🔍 Category filtering
+- ⭐ Popular dishes section
+- 🌟 Daily special highlight
+- 🛒 Floating shopping cart
+- ➕➖ Quantity controls
+- 💰 Automatic total calculation
+- 🎉 Order confirmation with generated order number
+- 🖱️ Custom cursor effects
+- 📱 Responsive design
 
 ---
 
@@ -85,14 +85,14 @@ The menu is stored as an array of JavaScript objects:
   id: 3,
   name: "Moqueca Nordestina",
   price: 58.00,
-  cat: "pratos",
+  cat: "dishes",
   badge: "⭐ Popular"
 }
 ```
 
 ### Dynamic Rendering
 
-Menu items are generated dynamically through JavaScript using:
+Menu items are generated dynamically using:
 
 ```javascript
 .map()
@@ -114,10 +114,10 @@ The cart uses an object where:
 
 Meaning:
 
-* Dish ID 3 → quantity 2
-* Dish ID 11 → quantity 1
+- Dish ID 3 → quantity 2  
+- Dish ID 11 → quantity 1  
 
-This provides quick access and prevents duplicate entries.
+This structure provides fast access and avoids duplicate entries.
 
 ---
 
@@ -129,7 +129,7 @@ Clone the repository:
 git clone https://github.com/wall966/ProjetRaizesNordeste.git
 ```
 
-Open the project folder and launch:
+Open the project folder and run:
 
 ```bash
 index.html
@@ -141,17 +141,17 @@ No installation or dependencies are required.
 
 ## 🛠️ Technologies Used
 
-* HTML5
-* CSS3
-* JavaScript (ES6+)
-* Google Fonts
-* Whimsical (Wireframing)
+- HTML5  
+- CSS3  
+- JavaScript (ES6+)  
+- Google Fonts  
+- Whimsical (Wireframing)
 
 ---
 
 ## 📐 Wireframes
 
-Wireframes were designed before implementation using Whimsical.
+Wireframes were designed before development using Whimsical.
 
 🔗 https://whimsical.com/wallace-s-workspace157/UTWK2iZa31xYA4BMuA3QqL
 
@@ -159,27 +159,26 @@ Wireframes were designed before implementation using Whimsical.
 
 ## 📚 Academic Information
 
-| Item        | Details                           |
-| ----------- | --------------------------------- |
-| Institution | UNINTER                           |
-| Course      | Systems Analysis and Development  |
-| Subject     | Multidisciplinary Project         |
-| Track       | Front-End Development             |
-| Year        | 2026                              |
-| Student     | Nogueira Wallace                  |
-
+| Item        | Details                          |
+|------------|----------------------------------|
+| Institution | UNINTER                         |
+| Course      | Systems Analysis and Development |
+| Subject     | Multidisciplinary Project       |
+| Track       | Front-End Development           |
+| Year        | 2026                            |
+| Student     | Wallace Nogueira               |
 
 ---
 
 ## 🔮 Future Improvements
 
-* Back-end integration
-* Database support
-* Online payments
-* Customer authentication
-* Loyalty program
-* Administrative dashboard
-* Real-time order tracking
+- Back-end integration  
+- Database support  
+- Online payments  
+- Customer authentication  
+- Loyalty program  
+- Admin dashboard  
+- Real-time order tracking  
 
 ---
 
@@ -187,4 +186,4 @@ Wireframes were designed before implementation using Whimsical.
 
 Academic project developed for educational purposes at UNINTER.
 
-© 2026 Nogueira WAllace
+© 2026 Wallace Nogueira
